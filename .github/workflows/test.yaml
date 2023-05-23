@@ -14,11 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: pwd
-        run: pwd
-
-      - name: ls -la
-        run: ls -la
+      - name: Remove lockfile
+        run: rm bun.lockb
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
